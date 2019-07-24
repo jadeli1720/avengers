@@ -1,7 +1,7 @@
 # Avengers
 
 ## Description
-This project is based off of a tutorial that will teach how to create Single Page Applications and using:
+This project is based off of a tutorial that will teach how to create Single Page Applications using:
  * React Router
  * Route Component
  * Link Component
