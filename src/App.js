@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 import './App.css';
 
@@ -12,7 +12,6 @@ import { avengers } from './Data/Data';
 
 function App() {
   
-
   return (
     <div className="App">
       <ul className="navbar">
@@ -36,7 +35,7 @@ function App() {
       <Route exact path='/avengers' render={props => <AvengersList {...props} avengers={avengers}/>} />
     <Route path="/avengers/:id" render={props => <AvengerPage {...props} avengers={avengers} />} />
 
-      {console.log(avengers)}
+      {/* {console.log(avengers)/**Test to see if we were grabbing data from Data.js */} 
 
     </div>
   );
