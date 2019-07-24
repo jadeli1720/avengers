@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 
 
 export default function AvengersList(props) {
@@ -19,7 +18,7 @@ export default function AvengersList(props) {
                     <p>({avenger.nickname})</p>
                 </div>
             ))}
-            {console.log("AvengerList",props) /** This let me know that the array data was being passed to the avengerlist*/}
+            {console.log("AvengerList",props) /** This let me know that the array data was being passed to the AvengerList*/}
         </div>
     )
 }

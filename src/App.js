@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 // import { useState } from 'react';
 
 import './App.css';
@@ -16,10 +16,10 @@ function App() {
     <div className="App">
       <ul className="navbar">
         <li>
-          <Link to='/'>Home</Link>
+          <NavLink exact to='/' activeClassName="activeNavButton" >Home</NavLink>
         </li>
         <li>
-          <Link to='/avengers'>Avengers</Link>
+          <NavLink to='/avengers' activeClassName="activeNavButton" >Avengers</NavLink>
         </li>
       </ul>
 
