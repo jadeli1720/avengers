@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 
 import AvengerDetails from './AvengerDetails';
+import AvengerMovies from './AvengerMovies'
 
 export default function AvengerPage(props) {
     const id = props.match.params.id;
@@ -26,7 +27,7 @@ export default function AvengerPage(props) {
             <Link to={`/avengers/${props.match.params.id}/movies`} >Movies</Link>
 
             <Route path="/avengers/:id/details" render={props => <AvengerDetails details={avenger.description} />} />
-            <Route path="/avengers/:id/movies" render={props => } />
+            <Route path="/avengers/:id/movies" render={props => <AvengerMovies movies={avenger.movies} /> } />
         </div>
     )
 }

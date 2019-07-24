@@ -1,11 +1,14 @@
 import React from 'react';
 
 const AvengerDetails = props => {
-    return( 
-    <p>
-        {props.details}
-    </p>
+    return (
+        <div className="details-container">
+            <p className="details">
+                {props.details}
+            </p>
+        </div>
+
     );
 }
- 
+
 export default AvengerDetails;
